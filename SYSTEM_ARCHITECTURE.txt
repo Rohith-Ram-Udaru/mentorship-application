@@ -1,0 +1,38 @@
+MENTORFLOW X SYSTEM ARCHITECTURE
+
+Client:
+- React/Vite SPA with protected routes.
+- Tailwind and ShadCN-style primitives for reusable UI.
+- Framer Motion for page and metric motion.
+- Recharts for KPI and organizational analytics.
+- Axios service layer attaches JWT to every API request.
+
+Server:
+- Node/Express API with modular routes, controllers, services, models, validators, middleware, and utilities.
+- SQLite via Node's built-in node:sqlite module.
+- JWT authentication and bcrypt password hashing.
+- Zod validation for required fields, IDs, dates, statuses, visibility, and KPI updates.
+
+Authorization:
+- Authentication is required for every protected API route.
+- Pairing access is loaded centrally by requirePairingAccess.
+- Role is resolved per pairing because one user can be mentor, mentee, or observer in different pairings.
+- Participant-only middleware protects all mutation routes.
+- Ended pairings are read-only.
+- Visibility checks filter observer lists and block direct detail URLs for pair-only sessions and feedback.
+- Feedback body and visibility cannot be edited after creation.
+
+Domain Model:
+- User table: name, email, password_hash, title, department.
+- Pairing table: mentor, mentee, observers JSON, dates, status, lifecycle metadata.
+- Session table: agenda, notes, visibility, action items JSON with owner/due/status.
+- Feedback table: immutable written feedback with sender, recipient, body, visibility.
+- KRA table: pairing goal container with KPI JSON.
+- KPI records: target, current value, status, due date, append-only history.
+
+Advanced Features:
+- Pairing health score from recency, open action items, KPI risk, and trust signals.
+- Drift alerts for stale meetings, open work, KPI risk, and paused status.
+- Unified timeline interleaving sessions, feedback, KRAs, and KPI updates with viewer entitlement.
+- Privacy indicators in UI and server-side privacy filters in API.
+- Organization dashboard scoped to accessible pairings.

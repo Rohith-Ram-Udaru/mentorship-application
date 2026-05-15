@@ -1,0 +1,309 @@
+PROJECT NAME:
+MENTORFLOW X
+
+BUILD MODE:
+Build full project at once, BUT architect mentally + structurally in phases so no requirement, hidden pain point, feature, validation, or edge case is forgotten.
+
+CORE IDEA:
+We are building ONE final enterprise-grade product,
+but phase structure exists as MEMORY + EXECUTION CONTROL.
+
+========================================================
+MASTER OBJECTIVE
+========================================================
+
+Build a premium, privacy-first, enterprise mentorship operating system using:
+
+Frontend:
+React.js (Vite) + Tailwind + Framer Motion + ShadCN
+
+Backend:
+Node.js + Express.js
+
+Database:
+MongoDB Atlas
+
+Goal:
+A stunning, scalable, evaluator-shocking platform that:
+- Solves all PS requirements
+- Solves hidden real-world mentorship pain points
+- Prevents edge-case failures
+- Has premium UI
+- Has zero critical architecture mistakes
+
+========================================================
+NON-NEGOTIABLE PRIORITIES
+========================================================
+
+Priority Order:
+1. Authorization correctness
+2. Privacy enforcement
+3. PS compliance
+4. Validation
+5. Data integrity
+6. Scalability
+7. UI polish
+8. Advanced differentiators
+
+========================================================
+PHASE MEMORY BLUEPRINT
+========================================================
+
+PHASE 0 — FOUNDATION
+Purpose:
+Project skeleton
+
+Includes:
+- React frontend setup
+- Tailwind
+- Framer Motion
+- ShadCN
+- Node backend
+- Express
+- MongoDB Atlas config
+- .env
+- ESLint
+- Prettier
+- Global error handling
+- Axios config
+- Folder architecture
+- Theme + dark mode
+- Landing page
+- Navbar/Footer
+
+--------------------------------------------------------
+
+PHASE 1 — AUTH
+Includes:
+- Register
+- Login
+- Logout
+- JWT
+- bcrypt
+- Auth middleware
+- Protected routes
+- User model
+- Validation
+- Token persistence
+
+Edge Cases:
+- duplicate email
+- invalid credentials
+- token expiry
+- unauthorized routes
+
+--------------------------------------------------------
+
+PHASE 2 — AUTHORIZATION ENGINE
+(MOST IMPORTANT)
+Includes:
+- verifyAuth
+- verifyPairMember
+- verifyMentorOrMentee
+- verifyObserver
+- verifyVisibility
+
+Protect:
+- list
+- detail
+- search
+- filters
+- pagination
+- direct URL/API
+
+Rules:
+Observer:
+- no pair-only data
+- read only
+
+--------------------------------------------------------
+
+PHASE 3 — PAIRINGS
+Includes:
+- create pairing
+- pause
+- resume
+- end
+- list
+- filters
+- role display
+
+Edge Cases:
+- mentor == mentee
+- duplicate pairings
+- ended restrictions
+
+--------------------------------------------------------
+
+PHASE 4 — OBSERVERS
+Includes:
+- add
+- remove
+- observer dashboard visibility
+
+Edge Cases:
+- duplicate observer
+- observer = mentor
+- observer = mentee
+
+--------------------------------------------------------
+
+PHASE 5 — 1:1 SESSIONS
+Includes:
+- create/edit
+- agenda
+- notes
+- visibility
+- action items
+- filters
+- sorting
+
+Edge Cases:
+- invalid owner
+- invalid due date
+- privacy leaks
+
+--------------------------------------------------------
+
+PHASE 6 — FEEDBACK
+Includes:
+- create
+- delete
+- immutable visibility
+- privacy controls
+- sent/received filters
+
+Edge Cases:
+- unauthorized delete
+- edit prevention
+- visibility mutation
+
+--------------------------------------------------------
+
+PHASE 7 — KRA/KPI
+Includes:
+- KRA creation
+- KPI creation
+- KPI updates
+- KPI history
+- KPI trends
+- KPI dashboard
+
+Edge Cases:
+- null targets
+- invalid states
+- history overwrite
+
+--------------------------------------------------------
+
+PHASE 8 — ADVANCED DIFFERENTIATORS
+Includes:
+- Pairing Health Score
+- Unified Timeline
+- Drift Warnings
+- Privacy Trust Indicators
+- Organizational Dashboard
+- KPI trend charts
+
+--------------------------------------------------------
+
+PHASE 9 — UI DOMINANCE
+Includes:
+- Responsive design
+- Mobile-first
+- Dashboard polish
+- Skeletons
+- Charts
+- Animations
+- Microinteractions
+- Empty states
+- Premium design
+
+--------------------------------------------------------
+
+PHASE 10 — SUBMISSION
+Includes:
+- README
+- Docker
+- Seed data
+- Demo users
+- Architecture explanation
+- AI usage
+- Trade-offs
+- Future scope
+
+========================================================
+TRADITIONAL PAIN POINTS TO SOLVE
+========================================================
+
+- scattered communication
+- forgotten feedback
+- poor trust
+- observer overreach
+- no growth measurement
+- weak governance
+- no lifecycle
+- privacy risks
+- poor scalability
+- no analytics
+
+========================================================
+UNIQUE DIFFERENTIATORS
+========================================================
+
+1. Pairing Health Score
+2. Unified Timeline
+3. Privacy Trust Layer
+4. Organizational Analytics
+5. KPI Trends
+6. Drift Detection
+7. Premium enterprise UI
+
+========================================================
+MASTER EDGE CASE WAR ROOM
+========================================================
+
+AUTH:
+- JWT tampering
+- invalid login
+- unauthorized route
+
+PAIRING:
+- self pairing
+- duplicates
+- ended mutation
+
+OBSERVER:
+- duplicates
+- role conflict
+
+SESSIONS:
+- invalid owner
+- invalid due date
+- pair-only leak
+
+FEEDBACK:
+- mutation
+- edit
+- wrong deletion
+
+KPI:
+- invalid progression
+- target missing
+- history corruption
+
+SEARCH:
+- hidden content exposure
+
+========================================================
+FINAL MINDSET
+========================================================
+
+We are NOT building:
+“A mentorship tracker”
+
+We ARE building:
+“An enterprise mentorship intelligence + privacy governance system”
+
+FINAL JURY IMPRESSION:
+This should feel like software a real organization would deploy internally.
